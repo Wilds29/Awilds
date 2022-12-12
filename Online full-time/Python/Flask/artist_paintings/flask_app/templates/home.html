@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <title>Home</title>
+  </head>
+  <body>
+    <h1> Welcome back, {{user.first_name}} !</h1>
+
+    <a href="/logout"><button type="button" class="btn btn-outline-primary">logout</button></a>
+    <a href="/add_painting" class="btn btn-primary">Add Painting</a>
+    <h1 class="text-center">All the Paintings</h1>
+    <div class="container">
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>title</th>
+                    <th>Owner</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for painting in paint %}
+                <tr>
+                    <td><a href="/painting/show/{{ painting.id }}">{{ painting.title }}</a></td>
+                    <td>{{ painting.user.first_name }}  {{ painting.user.last_name }}</td>
+                    <td>
+                    {% if painting.user.id == session['uuid'] %}
+                        <a href="/painting/edit/{{ painting.id }}">Edit</a> |
+                        <a href="/painting/destroy/{{ painting.id }}">Delete</a>
+                    {% endif %}
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    
+
+    
+    
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>

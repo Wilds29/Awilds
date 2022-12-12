@@ -1,0 +1,82 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.topnav {
+    background-color: black;
+    width: 80%;
+    font-size: x-large;
+    margin: auto;
+    color: white;
+}
+
+.h1 {
+    font-size: x-large;
+    margin-top: 20px;
+    text-align: center;
+    align-items: center;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+}
+
+.left-column {
+    width: 20%;
+}
+
+.pbox{
+    height: 325px;
+    display: flex;
+    box-sizing: border-box;
+    border-style: solid;
+    border-color: black;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.right-column {
+    width: 60%;
+    margin: auto;
+}
+
+.box {
+    width: 100%;
+    height: 200px;
+    box-sizing: border-box;
+    border-style: solid;
+    border-color: black;
+}
+
+.top-content {
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.profilelikes{
+    display: flex
+}
+
+button{
+    margin: 10px;
+    background-color: yellow;
+    color: black;
+    font-size: medium;
+    box-shadow: 2px 2px black;
+    font-size: larger;
+}
+
+p {
+    margin: 10px;
+    font-size: x-large;
+}
+
+img{
+    height: 100px;
+}

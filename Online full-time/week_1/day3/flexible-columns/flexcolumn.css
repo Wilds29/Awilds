@@ -1,0 +1,23 @@
+.row{
+    width: 100%;
+    height: auto;
+    background-color: blanchedalmond;
+    margin: auto;
+    display: flex;
+    padding: 10px
+}
+.col, .col-2, .col-3{
+    height: 100px;
+    background-color: green;
+    flex: 1;
+    padding: 10px;
+    margin: 10px;
+}
+.col-2{
+    height: 100px;
+    flex: 2;
+}
+.col-3{
+    height: 100px;
+    flex: 3;
+}

@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <title>Home</title>
+  </head>
+  <body>
+    <h1> Welcome back, {{user.first_name}} !</h1>
+
+    <a href="/logout"><button type="button" class="btn btn-outline-primary">logout</button></a>
+    <a href="/add_car" class="btn btn-primary">Add Car</a>
+    <h1 class="text-center">All the Cars</h1>
+    <div class="container">
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>model</th>
+                    <th>year</th>
+                    <th>Seller</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for car in cars %}
+                <tr>
+                    <td>{{ car.model }}</td>
+                    <td>{{ car.year }}</td>
+                    <td>{{ car.user.first_name }}</td>
+                    <td>
+                    {% if car.user.id == session['uuid'] %}
+                        <a href="/car/edit/{{ car.id }}">Edit</a> |
+                        <a href="/car/destroy/{{ car.id }}">Delete</a>
+                    {% else  %}
+                        <a href="/car/show/{{ car.id }}">Show car</a>
+                    {% endif %}
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    
+
+    
+    
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>

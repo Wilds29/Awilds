@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ButtonClicker</title>
+    <link rel="stylesheet" href="buttonclicker.css">
+</head>
+
+<body>
+    <div class="topnav">
+        <h1> Dojanary</h1>
+        <input type="text" placeholder="Search" class="search">
+        <button onclick="logout(this)" id="login">Login</button>
+    </div>
+    <div class="container">
+        <div class="left-column">
+            <div class="box">
+                <div class="word-info">
+                    <div class="ninja">
+                        <h2>Ninja</h2>
+                        <p><em>noun</em></p>
+                        <p>plural: <em>ninjas</em></p>
+                        <button class="likebutton" onclick="alert('ninja was liked')">13 likes</button>
+                    </div>
+                </div>
+                <div class="definition">
+                    <p>A practioner skilled in the <a href="#">Japanese</a> art of <a href="#">ninjutsu</a></p>
+                </div>
+            </div>
+            <div class="box2">
+                <div class="word-info">
+                    <div class="ninja">
+                        <h2>Ninja</h2>
+                        <p><em>noun</em></p>
+                        <p>plural: <em>ninjas</em></p>
+                        <button class="likebutton" onclick="alert('ninja was liked')">37 likes</button>
+                    </div>
+                </div>
+                <div class="definition">
+                    <p>A <a href="#">Programmer</a> who breaks down problems with <a href="#">zen</a>-like focus</p>
+                </div>
+            </div>
+        </div>
+        <div class="right-container">
+            <div class="add-definition">
+                <div class="dojonary">
+                    <p>Dojanary is defined by YOU</p>
+                </div>
+                <div>
+                    <button onclick="remove(this)" class="button2"> Add Definition</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="buttonclicker.js"></script>
+</body>
+</html>

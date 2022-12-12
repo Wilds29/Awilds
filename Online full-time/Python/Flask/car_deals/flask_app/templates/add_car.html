@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Create User</title>
+</head>
+
+<body>
+
+    <form action="/car/create" method="post" class="col-6 mx-auto">
+        <h2 class="text-center">Add Car for Sale</h2>
+        <div class="form-group">
+            <label for="first_name">price:</label>
+            <input type="number" min="1000" max="8000" step="1" value="year" name="price" />
+            {% for messages in get_flashed_messages(category_filter=['price'])%}
+                    <p>{{messages}}</p>
+                    {% endfor %}
+        </div>
+        <div class="form-group">
+            <label for="last_name">make:</label>
+            <input type="text" name="make" class="form-control">
+            {% for messages in get_flashed_messages(category_filter=['make'])%}
+                    <p>{{messages}}</p>
+                    {% endfor %}
+        </div>
+        <div class="form-group">
+            <label for="model">model</label>
+            <input type="text" name="model" class="form-control">
+            {% for messages in get_flashed_messages(category_filter=['model'])%}
+                    <p>{{messages}}</p>
+                    {% endfor %}
+        </div>
+        <div class="form-group">
+            <label for="year">year</label>
+            <input type="number" min="1900" max="2099" step="1" value="year" name="year" />
+            {% for messages in get_flashed_messages(category_filter=['year'])%}
+                    <p>{{messages}}</p>
+                    {% endfor %}
+        </div>
+        <div class="form-group">
+            <p><label for="description">Car Details</label></p>
+            <textarea id="description" name="description" rows="4" cols="50"></textarea>
+            {% for messages in get_flashed_messages(category_filter=['description'])%}
+                    <p>{{messages}}</p>
+                    {% endfor %}
+            <br>
+        </div>
+        <input type="submit" value="Add Car" class="btn btn-success">
+    </form>
+</body>
+
+</html>

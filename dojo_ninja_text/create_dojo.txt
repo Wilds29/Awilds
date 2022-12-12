@@ -1,0 +1,13 @@
+//create 3 dojos and delete
+
+SELECT * FROM dojos;
+
+
+INSERT INTO dojos(name) 
+VALUES('smug');
+INSERT INTO dojos(name) 
+VALUES('stone');
+INSERT INTO dojos(name) 
+VALUES('metal');
+//
+

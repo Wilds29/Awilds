@@ -1,0 +1,32 @@
+.topnav{
+    display: flex;
+    background-color: gray;
+}
+.nav-title{
+    color: white;
+    padding-left: 10px;
+}
+.nav-links{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    text-decoration: none;
+    color: lightgrey;
+}
+.active{
+    color: white;
+    text-decoration: none;
+}
+.btn{
+    background-color: rgb(28, 66, 192);
+    color: azure;
+    font-size: medium;
+    box-shadow: 5px 5px black;
+}
+li{
+    margin: 10px;
+    list-style-type: none;
+}
+body{
+    font-family: 'roboto', sans-serif;
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProfilePage</title>
+    <link rel="stylesheet" href="profilepage.css">
+</head>
+<div class="topnav">
+    <h1 class="nav-title">Profile</h1>
+    <ul class="nav-links">
+        <li><a href="#" class="nav-links">Home</a></li>
+        <li><a href="#" class="active">My Profile</a></li>
+        <li><a href="#" class="nav-links">Find Connections</a></li>
+        <li><button class="button">Sign Out</button></li>
+    </ul>
+</div>
+<body>
+    <div class="page">
+        <div class="container">
+            <div class="usercard">
+                <div class="cardheader">
+                    <img src="user-circle.png" alt="pic" class="avatar">
+                </div>
+                <div class="cardbody">
+                    <h1>Jane Doe</h1>
+                    <h3>
+                        <img src="map-marker.png" alt="marker" class="icon1">
+                        Seattle
+                    </h3>
+                    <p>Developer | Engineer | Problem Solver<br>
+                        Master of shadows and the Internet!</p>
+                    <p>
+                        <a href="#">
+                            <img src="gear.png" alt="gear" class="icon1">
+                            Edit Profile
+                        </a>
+                    </p>
+                </div>
+            </div>
+            <div class="education">
+                <div class="header2">
+                    <h2>Education</h2>
+                </div>
+                <div class="cardbody2">
+                    <h3>Coding Dojo - Full Stack Bootcamp</h2>
+                        <p class="date">Dec 2019 - Mar 2020</p>
+                        <p>Triple black belt in Python, MERN, and C#...</p>
+                </div>
+            </div>
+        </div>
+        <div class="container2">
+            <div class="connections">
+                <div class="header3">
+                    <h2 class="num">2</h2>
+                    <h2>connected request</h2>
+                </div>
+                <Div class="people">
+                    <h3>
+                        <img src="user-circle.png" alt="todd" class="icon1">
+                        Todd E
+                        <button class="button2" ng-click="approveTask(taskDetails.indexOf(task.id), task)"
+                            value="approveTask">Approve</button>
+                    </h3>
+                    <div>
+                        <h3>
+                            <img src="user-circle.png" alt="phil k" class="icon1">
+                            Phil K
+                            <button class="button2" ng-click="rejectTask(taskDetails.indexOf(task.id), task)">X</button>
+                        </h3>
+                    </div>
+                </div>
+            </div>
+            <div class="connections2">
+                <div class="header3">
+                    <h2 class="num">500</h2>
+                    <h2>Your Connections</h2>
+                </div>
+                <div class="people">
+                    <h3>
+                        <img src="user-circle.png" alt="adrienD" class="icon1">
+                        adrien D
+                    </h3>
+                    <h3>
+                        <img src="user-circle.png" alt="annj" class="icon1">
+                        Anne J
+                    </h3>
+                    <h3>
+                        <img src="user-circle.png" alt="alaynet" class="icon1">
+                        Alayne T
+                    </h3>
+                    <h3>
+                        <img src="user-circle.png" alt="arryy" class="icon1">
+                        Arry Y
+                    </h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

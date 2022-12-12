@@ -1,0 +1,103 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.h1{
+    text-align: center;
+    background-color: pink;
+    box-sizing: border-box;
+    border-style: solid;
+    border-color: black;
+    color: white;
+}
+
+.topnav{
+    width: 80%;
+    height: 30px;
+    margin: auto;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+input{
+    width: 40%;
+    box-sizing: border-box;
+    border-style: solid;
+    border-color: black;
+}
+
+.cart{
+    display: flex;
+    align-items: center;
+}
+.shopcart{
+    height: 40px;
+    padding-left: 5px;
+}
+
+.menu{
+    background-color: grey;
+    margin: auto;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+ul{
+    display: flex;
+    justify-content: center;
+    font-size: larger;
+    align-items: center;
+    list-style-type: none;
+    margin-left: 20px;
+}
+
+li{
+    margin-left: 10px;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+.store{
+    margin-top: 10px;
+    text-align: center;
+    font-size: xx-large;
+    background-color: pink;
+    color: white;
+}
+
+.sort-list{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.store-items{
+    display: flex;
+}
+
+.plushies{
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product{
+    height: 90%;
+    width: 95%;
+    margin-bottom: 10px;
+}
+
+.btn{
+    margin-top: 10px;
+    background-color: pink;
+    border-radius: 2px;
+    font-size: larger;
+}

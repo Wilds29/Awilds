@@ -1,0 +1,17 @@
+h1{
+    background-color: black;
+    color: aqua;
+}
+
+h2{
+    background-color: rgb(131, 3, 250);
+    color: white;
+    text-align: center;
+}
+
+h3{
+    color: black;
+    background-color: cornflowerblue;
+    text-decoration: underline;
+    text-align: right;
+}

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+</head>
+<body>
+    <div>
+        <h1 class="h1">Counter</h1>
+        <h5 class="h5">you visit the page {{session["count"]}} times</h5>
+        <form action="/count" method="post">
+            <button type="submit" class="btn btn-outline-primary" name="alter" value="add">add 2 visits</button>
+            <button type="submit" class="btn btn-outline-danger"name="alter" value="reset">reset Counter</button>
+        </form>
+    </div>
+
+
+
+</body>
+</html>

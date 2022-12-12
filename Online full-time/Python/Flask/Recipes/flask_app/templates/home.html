@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <title>Home</title>
+  </head>
+  <body>
+    <h1> Welcome back, {{user.first_name}} !</h1>
+
+    <a href="/logout"><button type="button" class="btn btn-outline-primary">logout</button></a>
+    <a href="/recipe/new_recipe" class="btn btn-primary">Add Recipes</a>
+    <h1 class="text-center">All the Recipes</h1>
+    <div class="container">
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>name</th>
+                    <th>Created At</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for dojos in dojo %}
+                <tr>
+                    <td>{{ dojos.name}}</td>
+                    <td>{{ dojos.created_at.strftime("%b %d %Y") }}</td>
+                    <td> {{dojos.id}} </td>
+                    <td>
+                        <a href="/recipe/show/{{ recipe.id }}">Show Recipe</a>|
+                        <a href="/recipe/edit/{{ recipe.id }}">Edit</a>|
+                        <a href="/recipe/destroy/{{ recipe.id }}">Delete</a>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    
+
+    
+    
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>

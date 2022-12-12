@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YellowBelt</title>
+    <link rel="stylesheet" href="belt.css">
+</head>
+
+<body>
+    <h2 class="h1">FREE PHONE GRIP ON SELECT PURCHASES</h2>
+    <div class="topnav">
+        <h1>Plushstar</h1>
+        <input type="text" placeholder="Search..">
+        <div class="cart">
+            <p id="purchase">0</p>
+            <img src="cart-dark.png" alt="shopcart" class="shopcart">
+        </div>
+    </div>
+    <div class="menu">
+        <ul>
+            <li>Home</li>
+            <li>Product</li>
+            <li>sales</li>
+            <li>blog</li>
+            <li onclick="alert('contact us at 555-5555')">contact us</li>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="store">
+            <h1>Plushy Store</h1>
+        </div>
+        <div class="sort-list">
+            <p>62 products, sorted by <a href="#" id="sorted">Pricing</a></p>
+            <div class="dropdown">
+                <label for="sort-select">Sort By:</label>
+                <select onchange="sortby(this)" id="choose">
+                    <option value="Pricing">Pricing</option>
+                    <option value="BestSelling">Best Selling</option>
+                </select>
+            </div>
+        </div>
+        <div class="store-items">
+            <div class="plushies">
+                <img src="product-image.png" alt="product" class="product">
+                <h3>Mischieve Mouse</h3>
+                <button onclick="buy()" class="btn">Buy</button>
+            </div>
+            <div class="plushies">
+                <img src="product-image.png" alt="product" class="product">
+                <h3>Shiny Shrew</h3>
+                <button onclick="buy()" class="btn">Buy</button>
+            </div>
+            <div class="plushies">
+                <img src="product-image.png" alt="product" class="product">
+                <h3>Angry Hamster</h3>
+                <button onclick="buy()" class="btn">Buy</button>
+            </div>
+            <div class="plushies">
+                <img src="product-image.png" alt="product" class="product">
+                <h3>Chilly Chinchilla</h3>
+                <button onclick="buy()" class="btn">Buy</button>
+            </div>
+        </div>
+    </div>
+    <script src="belt.js"></script>
+</body>
+
+</html>

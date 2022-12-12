@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>User</title>
+</head>
+<body>
+    <h2 class="text-center">dojo {{dojos.id}}</h2>
+    <p>dojo Name: {{dojos.name}}</p>
+    <p>Created ON: {{dojos.created_at.strftime("%b %d %Y")}}</p>
+    <p>Last Updated: {{  dojos.updated_at.strftime("%b %d %Y")}}</p>
+    {%for ninja in ninjas_dojo %}
+    <p>ninja first name:{{ninja.first_name}}</p>
+    <p>ninja last name: {{ninja.last_name}}</p>
+    <p>age: {{ninja.age}}</p>
+    {% endfor %}
+
+    <a href="/home" class="btn btn-primary">Add Recipes</a>
+</body>
+</html>

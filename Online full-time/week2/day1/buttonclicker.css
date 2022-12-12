@@ -1,0 +1,114 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.topnav {
+    width: 80%;
+    height: 100px;
+    margin: auto;
+    align-items: center;
+    background-color: gray;
+    display: flex;
+    justify-content: space-between;
+}
+
+h1 {
+    margin: 10px;
+}
+
+.search {
+    font-size: larger;
+    width: 30%;
+}
+
+#login {
+    margin: 10px;
+    background-color: blue;
+    color: azure;
+    font-size: medium;
+    box-shadow: 2px 2px black;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    display: flex;
+}
+
+.left-column {
+    width: 60%;
+}
+
+.box {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    border-style: solid;
+    border-color: 2px black;
+    padding: 10px;
+}
+
+.ninja {
+    margin: 10px;
+}
+
+.wordinfo {
+    margin: 5px;
+}
+
+.ninja {
+    margin: 20px;
+}
+
+.right-container {
+    width: 40%;
+}
+
+.add-definition {
+    width: 90%;
+    height: auto;
+    margin: auto;
+    margin-top: 10px;
+    align-items: center;
+    box-sizing: border-box;
+    border-style: solid;
+    border-color: 2px black;
+    padding: 10px;
+    font-size: xx-large;
+}
+
+.box2 {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    border-style: solid;
+    border-color: 2px black;
+    padding: 10px;
+}
+
+.button2 {
+    margin: 10px;
+    background-color: green;
+    color: azure;
+    font-size: medium;
+    box-shadow: 2px 2px black;
+}
+
+.likebutton {
+    margin: 10px;
+    background-color: yellow;
+    color: black;
+    font-size: medium;
+    box-shadow: 2px 2px black;
+}
+
+h2 {
+    font-size: xx-large;
+}

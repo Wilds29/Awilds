@@ -1,0 +1,28 @@
+
+/*CSS reset settings here*/
+div {
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-emphasis-color: white;
+    height: 200px;
+}
+
+li{
+color: azure;
+list-style-type: none;
+display: inline;
+padding-right: 50px;
+}
+
+img{
+    height: 150px;
+    width: 200px;
+    padding-right: 300px;
+}
+
+h1{
+    color: aliceblue;
+}

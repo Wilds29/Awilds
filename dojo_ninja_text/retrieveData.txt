@@ -1,0 +1,9 @@
+//retrieve first, second and third dojo's ninjas
+select * from ninjas where dojos_id = 29
+select * from ninjas where dojos_id = 30
+select * from ninjas where dojos_id = 31
+
+
+//retrieve last ninjas dojo
+
+select * from ninjas where id =15;
